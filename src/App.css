@@ -1,0 +1,160 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.header{
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+  color: greenyellow;
+  border-left: 1px solid greenyellow;
+  border-right: 1px solid greenyellow;
+  border-top: 1px solid greenyellow;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+li{
+  list-style: none;
+}
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: greenyellow;
+  height: 3rem;
+  margin-top: 0;
+
+}
+.nav li{
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+}
+.nav li.active {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+}
+.money{
+  font-weight: 800;
+}
+.products{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  order: 1;
+  width: 1350px;
+
+}
+.product img{
+  width: 250px;
+  height: 250px;
+}
+.add{
+  width: 250px;
+  height: 30px;
+  border: 1px solid greenyellow;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+.add:hover{
+  background-color: greenyellow;
+  color: white;
+}
+.cartPage{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 5rem; */
+}
+.cartPage h4{
+  font-size: 25px;
+  /* margin-bottom: -3rem; */
+  margin-top: -.5rem;
+  border-bottom: 4px solid greenyellow;
+}
+.cartItems{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  order: 1;
+  width: 1350px;
+}
+.cartItems img{
+  width: 250px;
+  height: 250px;
+}
+.carttags {
+  background-color: greenyellow ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 1rem;
+
+}
+.carttags p:nth-child(3){
+  font-weight: 800;
+
+}
+.carttags p:nth-child(2){
+  margin-top: -1rem;
+}
+.quan{
+  font-weight: 800;
+}
+.total_amt{
+  margin-top: -.5rem;
+}
+
+/* 
+@media (max-width: 768px) {
+  .products {
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header {
+    background-color: red;
+    color: white;
+    border-color: red;
+    margin-bottom: 1rem;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: greenyellow;
+    height: 3rem;
+  
+  }
+  .nav li{
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .nav li.active {
+    background-color: white;
+    padding: 5px;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 500px) {
+ 
+} */
